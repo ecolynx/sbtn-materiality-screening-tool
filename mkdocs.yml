@@ -1,0 +1,56 @@
+
+# Project information
+site_name: SBTN Materiality Screening Tool
+# site_url: https://squidfunk.github.io/mkdocs-material/
+site_author: SBTN
+site_description: >-
+  Write your documentation in Markdown and create a professional static site in
+  minutes – searchable, customizable, in 60+ languages, for all devices
+
+# Repository
+repo_name: ecolynx/sbtn-materiality-screening-tool
+repo_url: https://github.com/ecolynx/sbtn-materiality-screening-tool
+
+# Copyright
+copyright: ""
+
+nav:
+  - 0. About: index.md
+  - 1. Overview: overview.md
+  - 2. Interpretation Guidance: interpretation-guidance.md
+  - 3. Methodology: methodology.md
+  - 4. Direct Operations: direct-operations.md
+  - 7. Full Materiality Dataset: full-materiality-dataset.md
+  - 8. Base Data Materiality Rule: base-data-materiality-rule.md
+    #- Getting Started: user-guide/getting-started.md
+  #- Auto generated:
+  #  - ... | auto-generated/*/*.md
+
+theme:
+  name: material
+  favicon: assets/nature-people-outline.png
+  icon:
+    logo: material/nature-people-outline
+plugins:
+  - table-reader
+  - search:
+      lang: 
+        - en
+        - es
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  #- javascripts/tablesort-util.js
+  #- javascripts/tablefilter.js
+  #- javascripts/tablefilter.css
+  #- javascripts/tablefilter-util.js
+  #- javascripts/jquery-3.7.0.min.js
+  #- https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js
+  #- javascripts/datatable-util.js
+
+extra_css:
+  - https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css
+  #- https://cdnjs.cloudflare.com/ajax/libs/material-components-web/4.0.0/material-components-web.min.css
+  #- https://cdn.datatables.net/1.13.6/css/dataTables.material.min.css
+  #- stylesheets/tablesort.css
+
+
