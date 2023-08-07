@@ -5,7 +5,8 @@
 The aim of the Materiality Screening Tool is to help users carry out a first screening of the types of environmental impacts that are potentially materially relevant to their sector and their company's activities, as part of Step 1a of the SBTN guidance. During the subsequent steps of the SBTN method, companies are expected to refine their understanding of environmental and societal materiality and gather more precise and accurate information to quantify their environmental impacts.
 
 ## Development status
-Note that this tool is currently in its 'beta' form. Functionalities, like the screening of  pressures in a company's upstream, are not currently available. Updates are expected in the near future. 
+!!! note
+    This tool is currently in its 'beta' form. Functionalities, like the screening of  pressures in a company's upstream, are not currently available. Updates are expected in the near future. 
 
 ## Outline
 This documentation comprises 9 pages:

@@ -22,6 +22,7 @@ nav:
   - 4. Direct Operations: direct-operations.md
   - 7. Full Materiality Dataset: full-materiality-dataset.md
   - 8. Base Data Materiality Rule: base-data-materiality-rule.md
+  - Table: table.md
     #- Getting Started: user-guide/getting-started.md
   #- Auto generated:
   #  - ... | auto-generated/*/*.md
@@ -31,6 +32,19 @@ theme:
   favicon: assets/nature-people-outline.png
   icon:
     logo: material/nature-people-outline
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
 plugins:
   - table-reader
   - search:
@@ -46,11 +60,25 @@ extra_javascript:
   #- javascripts/jquery-3.7.0.min.js
   #- https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js
   #- javascripts/datatable-util.js
+  # - javascripts/multiselect-dropdown.js
+  - https://unpkg.com/tabulator-tables@5.5.0/dist/js/tabulator.min.js
+  #- javascripts/tabulator-util.js
+  - javascripts/tabulator-init.js
 
 extra_css:
-  - https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css
+  # - https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css
   #- https://cdnjs.cloudflare.com/ajax/libs/material-components-web/4.0.0/material-components-web.min.css
   #- https://cdn.datatables.net/1.13.6/css/dataTables.material.min.css
   #- stylesheets/tablesort.css
+  - https://unpkg.com/tabulator-tables@5.5.0/dist/css/tabulator.min.css
 
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - abbr
+  - attr_list
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
 
