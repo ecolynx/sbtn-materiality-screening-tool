@@ -3,25 +3,29 @@
 
 ## Interpreting the results
 
-The tool provides users with ratings of materiality for different economic activities. These activities are listed as 'ISIC Group' and UNEP-WCMC 'Production Process' pairs ('Group-Process pairs').  
+The tool provides users with ratings of materiality for different economic activities. These activities are listed as [`ISIC Group`](definitions.md#isic-group) and UNEP-WCMC `Production Process` pairs (`Group-Process` pairs).
 
-Each Group-Process pair has been evaluated for material contributions toward 12 different pressure categories. The values in this tool reflect the numerical indexed 'pressure score' attributed to each economy activity (by Group-Process pair), for each pressure category. Additional columns have also been added to indicate whether or not the score is significant, using a categorical 'materiality rating,' based on a materiality threshold. This threshold is based on the full distribution of numerical scores for all of the base economic activities present in the underlying dataset for this tool (see tab: Methodology). 
+Each `Group-Process` pair has been evaluated for material contributions toward 12 different pressure categories. The values in this tool reflect the numerical indexed **pressure score** attributed to each economy activity (by `Group-Process` pair), for each pressure category. Additional columns have also been added to indicate whether or not the score is significant, using a categorical **materiality rating**, based on a **materiality threshold**. This threshold is based on the full distribution of numerical scores for all of the base economic activities present in the underlying dataset for this tool (see [Methodology](methodology.md)). 
 
-The interface for this tool currently faciliates the analysis of environmental impacts at the production process level. Within tabs "4 - Direct Operations" and "5 - Materiality summary," where companies select activities and receive scores, materiality ratings are associated with each production process. 
+The interface for this tool currently faciliates the analysis of environmental impacts at the production process level. Within the [materiality dataset tool](direct-operations.md), where companies select activities and receive scores, materiality ratings are associated with each production process. 
 
-However, companies may also complete their screening at the ISIC Group level using the tab "7 - Full materiality dataset DO." In this approach, scoring is based on an average of the relevant production processes associated with the ISIC group. For companies using this approach, if an economic activitiy at the ISIC Group level is not considered material (see column "avgmateriality"), they must still include production processes within that group which are likely material for that pressure unless they can prove that the production process is not relevant to the their operations. This approach is offered to allow for flexibility in the assessment process and the ability to complete the screening more quickly. It is not intended to contradict the evaluation of an individual production process. The interface for anlaysis at this level (similar to tabs 4 and 5) may be created in further revisions of the tool.
+However, companies may also complete their screening at the ISIC Group level using the [full materiality dataset](full-materiality-dataset.md). In this approach, scoring is based on an average of the relevant production processes associated with the ISIC group. For companies using this approach, if an economic activitiy at the ISIC Group level is not considered material (see column "avgmateriality"), they must still include production processes within that group which are likely material for that pressure unless they can prove that the production process is not relevant to the their operations. This approach is offered to allow for flexibility in the assessment process and the ability to complete the screening more quickly. It is not intended to contradict the evaluation of an individual production process. The interface for anlaysis at this level (similar to tabs 4 and 5) may be created in further revisions of the tool.
 
 
-Range of values in the tool: Ratings for each activity range from 3-9, with 3 being the lowest, and 9 being the highest. When there is not enough information to attribute a rating, the tool will read ND for "No Data". Please note: no data does not mean that there is not likely to be an impact. This value reflects the findings of the initial research effort that underpins this dataset.
+### Range of values in the tool
+Ratings for each activity range from 3-9, with 3 being the lowest, and 9 being the highest. When there is not enough information to attribute a rating, the tool will read ND for "No Data". Please note: no data does not mean that there is not likely to be an impact. This value reflects the findings of the initial research effort that underpins this dataset.
 
-Economic activities represented in each rating: These activity ratings are considered to be those representing a company's direct operations only. Currently, upstream ratings can be retrieved by users based on the known connections between activities in a company's direct operations and those of their upstream suppliers.
+### Economic activities represented in each rating
+These activity ratings are considered to be those representing a company's direct operations only. Currently, upstream ratings can be retrieved by users based on the known connections between activities in a company's direct operations and those of their upstream suppliers.
 
-Thresholds for inclusion: For each pressure, the threshold for inclusion varies, depending on the distribution of scores for that pressure category. For instance, for land use change the threshold for inclusion is a rating of 8, vs. for water pollution the threshold for inclusion is a rating of 7. 
+### Thresholds for inclusion
+For each pressure, the threshold for inclusion varies, depending on the distribution of scores for that pressure category. For instance, for land use change the threshold for inclusion is a rating of 8, vs. for water pollution the threshold for inclusion is a rating of 7. 
 
-Known limitations of the dataset:
-- these ratings reflect typical impacts at sector level, and may not be specific enough to capture the reality every company (note: this is why Step 1a is followed directly by Step 1b, in which companies introduce their own data)
-- these ratings represent potential impacts (not actual impacts)
-- development work around the ratings is ongoing, in particular to explore and implement improvements to upstream and downstream links using input-output modelling.
+!!! warning "Known limitations of the dataset"
+
+    - These ratings reflect typical impacts at sector level, and may not be specific enough to capture the reality every company. :memo: This is why **Step 1a** is followed directly by **Step 1b**, in which companies introduce their own data to refine the materiality assessment.
+    - These ratings represent potential impacts and not actual impacts.
+    - Development work around the ratings is ongoing, in particular to explore and implement improvements to upstream and downstream links using input-output modelling.
 
 ## Primary requirements & recommendations for use of this tool in Step 1a
 
