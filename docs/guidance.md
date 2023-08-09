@@ -1,19 +1,42 @@
 
-# Interpretation Guidance
+# Guidance
 
-## Interpreting the results
+## Interpretation
 
-The tool provides users with ratings of materiality for different economic activities. These activities are listed as [`ISIC Group`](definitions.md#isic-group) and UNEP-WCMC `Production Process` pairs (`Group-Process` pairs).
+The [materiality tool](direct-operations.md) provides users with ratings of materiality for different economic activities. These activities are listed as [`ISIC group`](definitions.md#isic-group) and UNEP-WCMC [`production process`](definitions.md#production-process) pairs ([`group-process pairs`](definitions.md#group-process-pair)).
 
-Each `Group-Process` pair has been evaluated for material contributions toward 12 different pressure categories. The values in this tool reflect the numerical indexed **pressure score** attributed to each economy activity (by `Group-Process` pair), for each pressure category. Additional columns have also been added to indicate whether or not the score is significant, using a categorical **materiality rating**, based on a **materiality threshold**. This threshold is based on the full distribution of numerical scores for all of the base economic activities present in the underlying dataset for this tool (see [Methodology](methodology.md)). 
+!!! info inline end "Pressure categories"
+    - Terrestrial ecosystem use
+    - Freshwater ecosystem use
+    - Marine ecosystem use
+    - Water use
+    - Other resource use
+    - GHG emissions
+    - Non-GHG air pollutants
+    - Water pollutants
+    - Soil pollutants
+    - Solid waste
+    - Disturbances
+    - Biological alterations
 
-The interface for this tool currently faciliates the analysis of environmental impacts at the production process level. Within the [materiality dataset tool](direct-operations.md), where companies select activities and receive scores, materiality ratings are associated with each production process. 
+Each [`group-process pair`](definitions.md#group-process-pair) has been evaluated for material contributions toward 12 different **pressure categories**. A numerical indexed **pressure score** is attributed to each [`group-process pair`](definitions.md#group-process-pair) and **pressure category**. Additional values have also been added to indicate whether or not the score is significant, using a categorical **materiality rating**, based on a **materiality threshold**. This threshold is based on the full distribution of numerical scores for all of the base economic activities present in the underlying dataset.
 
-However, companies may also complete their screening at the ISIC Group level using the [full materiality dataset](full-materiality-dataset.md). In this approach, scoring is based on an average of the relevant production processes associated with the ISIC group. For companies using this approach, if an economic activitiy at the ISIC Group level is not considered material (see column "avgmateriality"), they must still include production processes within that group which are likely material for that pressure unless they can prove that the production process is not relevant to the their operations. This approach is offered to allow for flexibility in the assessment process and the ability to complete the screening more quickly. It is not intended to contradict the evaluation of an individual production process. The interface for anlaysis at this level (similar to tabs 4 and 5) may be created in further revisions of the tool.
+The [materiality tool](direct-operations.md) currently facilitates the analysis of environmental impacts at the [`production process`](definitions.md#production-process) level. A **materiality rating** is associated with each [`production process`](definitions.md#production-process) indicating whether or not the activity is considered material in a given **pressure category**.
 
+### Alternative
 
-### Range of values in the tool
-Ratings for each activity range from 3-9, with 3 being the lowest, and 9 being the highest. When there is not enough information to attribute a rating, the tool will read ND for "No Data". Please note: no data does not mean that there is not likely to be an impact. This value reflects the findings of the initial research effort that underpins this dataset.
+Companies may also complete their screening at the [`ISIC group`](definitions.md#isic-group) level using the [full materiality dataset](full-materiality-dataset.md). In this approach, scoring is based on an average of the relevant `production processes` associated with the [`ISIC group`](definitions.md#isic-group) (**average materiality**). 
+
+!!! note
+    For companies using this approach, if an economic activitiy at the [`ISIC group`](definitions.md#isic-group) level is not considered material, they must still include `production processes` within that group which are likely material for that pressure unless they can prove that the `production process` is not relevant to the their operations. 
+
+<!-- This approach is offered to allow for flexibility in the assessment process and the ability to complete the screening more quickly. It is not intended to contradict the evaluation of an individual production process. The interface for anlaysis at this level (similar to tabs 4 and 5) may be created in further revisions of the tool. -->
+
+### Pressure Scores
+Scores for each activity range from 3 to 9. When there is not enough information to attribute a score, the tool will read ND for "No Data".
+
+!!! note
+    ND does not mean that it is not likely there is an impact. This value reflects the findings of the initial research effort that underpins this dataset.
 
 ### Economic activities represented in each rating
 These activity ratings are considered to be those representing a company's direct operations only. Currently, upstream ratings can be retrieved by users based on the known connections between activities in a company's direct operations and those of their upstream suppliers.

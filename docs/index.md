@@ -1,20 +1,41 @@
 
 # Overview
 
-The aim of this tool is to help users carry out a first screening of the types of environmental impacts that are potentially materially relevant to their sector and their company's activities, as part of **Step 1a** of the SBTN guidance.
+This documentation is based on the [SBTN Materiality Screening Tool](https://sciencebasedtargetsnetwork.org/wp-content/uploads/2023/05/SBTN-Materiality-Screening-Tool-v1.xlsx) developed by UNEP-WCMC, BCG and SBTN. The aim is to help users carry out a first screening of the types of environmental impacts that are potentially materially relevant to their sector and their company's activities.
 
-!!! info
-    During the subsequent steps of the SBTN method, companies are expected to refine their understanding of environmental and societal materiality and gather more precise and accurate information to quantify their environmental impacts.
+!!! info "SBTN"
+    The initial screening process corresponds to **Step 1a** of the SBTN guidance. During the subsequent steps of the SBTN method, companies are expected to refine their understanding of environmental and societal materiality and gather more precise and accurate information to quantify their environmental impacts.
 
-!!! note
-    This tool is currently in its 'beta' form. Functionalities, like the screening of  pressures in a company's upstream, are not currently available. Updates are expected in the near future.
+<!-- !!! note
+    This tool is currently in its 'beta' form. Functionalities, like the screening of  pressures in a company's upstream, are not currently available. Updates are expected in the near future. -->
 
-## How to use
-This tool allows users to do the following actions:
+## Features
 
-* Explore a subset of the [materiality dataset](direct-operations.md) by selecting specific ISIC groups in the [tool](direct-operations.md).
-* Consult or download the [full materiality dataset](full-materiality-dataset.md) with ratings to explore these further.
-* If necessary, translate the materiality tool, currently in the International Standard Industrial Classification of All Economic Activities (ISIC) into other classifications.
+-   :material-tools:{ .lg .middle } __Exploration Tool__
+
+    Select [`ISIC groups`](definitions.md#isic-group) and explore their corresponding [`production processes'`](definitions.md#production-process) materiality scores and ratings for each pressure category
+
+    [:octicons-arrow-right-24: Tools](direct-operations.md)
+
+    ---
+
+-   :material-database:{ .lg .middle } __Full Dataset__
+
+    Consult full materiality dataset and explore the materiality scores and ratings for each pressure category
+
+    [:octicons-arrow-right-24: Datasets](full-materiality-dataset.md)
+
+    ---
+
+<!-- TODO -->
+<!-- -   :material-format-font:{ .lg .middle } __Other Classifications__
+
+    If necessary, translate the materiality tool, currently in the International Standard Industrial Classification of All Economic Activities (ISIC) into other classifications.
+
+    [:octicons-arrow-right-24: Classifications](#)
+
+    --- -->
+
 
 
 ## Outline

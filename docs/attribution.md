@@ -1,7 +1,7 @@
 
 # Attribution
 
-This documentation is based on the [SBTN Materiality Screening Tool](https://sciencebasedtargetsnetwork.org/wp-content/uploads/2023/05/SBTN-Materiality-Screening-Tool-v1.xlsx) developed by UNEP-WCMC, BCG and SBTN. The tool is designed to help companies identify the environmental impacts that are potentially material to their business, as part of **Step 1a** of the SBTN guidance.
+This documentation is based on the [SBTN Materiality Screening Tool](https://sciencebasedtargetsnetwork.org/wp-content/uploads/2023/05/SBTN-Materiality-Screening-Tool-v1.xlsx) developed by UNEP-WCMC, BCG and SBTN.
 
 ## Citation
 
@@ -16,6 +16,8 @@ Available at: https://sciencebasedtargetsnetwork.org/wp-content/uploads/2023/05/
 ## Developer Credits
 
 The original work was made possible through the support of Science Based Targets Network, a sponsored project of Rockefeller Philanthropy Advisors.
+
+## Contributors
 
 * **UNEP-WCMC**
     - Clementine Fournier

@@ -17,8 +17,9 @@ copyright: ""
 nav:
   - Getting Started:
     - Overview: index.md
-    - Interpretation Guidance: interpretation-guidance.md
+    - Guidance: guidance.md
     - Methodology: methodology.md
+    - Tool: direct-operations.md
     - Definitions: definitions.md
     - Attribution: attribution.md
     - License: license.md

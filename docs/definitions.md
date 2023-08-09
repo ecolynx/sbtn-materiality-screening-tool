@@ -1,17 +1,17 @@
 
 # Definitions
 
-## `ISIC Group`
+## `ISIC group`
 
 :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
     tellus non sem sollicitudin, quis rutrum leo facilisis.
 
-## `Lorem ipsum dolor sit amet`
+## `production process`
 
 :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
     tellus non sem sollicitudin, quis rutrum leo facilisis.
 
-## `Cras arcu libero`
+## `group-process pair`
 
 :   Aliquam metus eros, pretium sed nulla venenatis, faucibus auctor ex. Proin
     ut eros sed sapien ullamcorper consequat. Nunc ligula ante.
