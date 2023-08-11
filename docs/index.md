@@ -1,7 +1,9 @@
 
 # Overview
 
-This documentation is based on the [SBTN Materiality Screening Tool](https://sciencebasedtargetsnetwork.org/wp-content/uploads/2023/05/SBTN-Materiality-Screening-Tool-v1.xlsx) developed by UNEP-WCMC, BCG and SBTN. The aim is to help users carry out a first screening of the types of environmental impacts that are potentially materially relevant to their sector and their company's activities.
+This documentation is based on the [SBTN Materiality Screening Tool](https://sciencebasedtargetsnetwork.org/wp-content/uploads/2023/05/SBTN-Materiality-Screening-Tool-v1.xlsx) developed by UNEP-WCMC, BCG and SBTN. It corresponds to the version `v1 May 2023` of the tool.
+
+The aim is to help users carry out a first screening of the types of environmental impacts that are potentially materially relevant to their sector and their company's activities.
 
 !!! info "SBTN"
     The initial screening process corresponds to **Step 1a** of the SBTN guidance. During the subsequent steps of the SBTN method, companies are expected to refine their understanding of environmental and societal materiality and gather more precise and accurate information to quantify their environmental impacts.
@@ -15,7 +17,7 @@ This documentation is based on the [SBTN Materiality Screening Tool](https://sci
 
     Select [`ISIC groups`](definitions.md#isic-group) and explore their corresponding [`production processes'`](definitions.md#production-process) materiality scores and ratings for each pressure category
 
-    [:octicons-arrow-right-24: Tools](direct-operations.md)
+    [:octicons-arrow-right-24: Tool](direct-operations.md)
 
     ---
 
@@ -23,7 +25,7 @@ This documentation is based on the [SBTN Materiality Screening Tool](https://sci
 
     Consult full materiality dataset and explore the materiality scores and ratings for each pressure category
 
-    [:octicons-arrow-right-24: Datasets](full-materiality-dataset.md)
+    [:octicons-arrow-right-24: Dataset](full-materiality-dataset.md)
 
     ---
 
