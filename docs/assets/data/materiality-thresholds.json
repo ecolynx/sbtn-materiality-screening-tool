@@ -1,0 +1,62 @@
+[
+    {
+        "Pressure category": "Terrestrial ecosystem use",
+        "Threshold": 8,
+        "Scope": true
+    },
+    {
+        "Pressure category": "Freshwater ecosystem use",
+        "Threshold": 8,
+        "Scope": false
+    },
+    {
+        "Pressure category": "Marine ecosystem use",
+        "Threshold": 8,
+        "Scope": false
+    },
+    {
+        "Pressure category": "Water use",
+        "Threshold": 8,
+        "Scope": true
+    },
+    {
+        "Pressure category": "Other resource use",
+        "Threshold": 8,
+        "Scope": false
+    },
+    {
+        "Pressure category": "GHG emissions",
+        "Threshold": 9,
+        "Scope": true
+    },
+    {
+        "Pressure category": "Non-GHG air pollutants",
+        "Threshold": 7,
+        "Scope": false
+    },
+    {
+        "Pressure category": "Water pollutants",
+        "Threshold": 7,
+        "Scope": true
+    },
+    {
+        "Pressure category": "Soil pollutants",
+        "Threshold": 6,
+        "Scope": true
+    },
+    {
+        "Pressure category": "Solid waste",
+        "Threshold": 7,
+        "Scope": false
+    },
+    {
+        "Pressure category": "Disturbances",
+        "Threshold": 7,
+        "Scope": false
+    },
+    {
+        "Pressure category": "Biological alterations/interferences",
+        "Threshold": 6,
+        "Scope": false
+    }
+]

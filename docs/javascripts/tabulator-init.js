@@ -23,26 +23,26 @@ const table = new Tabulator("#example-table", {
   //   { title: "Date Of Birth", field: "dob", sorter: "date", hozAlign: "center" },
   // ],
   //groupBy: "impact",
-  // columns: [
-  //   { title: "Isic Section", field: "isic_section", headerFilter: "input" },
-  //   { title: "Isic Division", field: "isic_division", headerFilter: "input" },
-  //   { title: "Isic Group", field: "isic_group", headerFilter: "input" },
-  //   { title: "Production Process", field: "production_process", headerFilter: "input" },
-  //   { title: "Impact", field: "impact" },
-  // ],
-  // pagination: true,
-  // paginationSize: 12,
-  groupBy: "Nature-related issue area",
   columns: [
-    //{ title: "Issue", field: "Nature-related issue area", headerFilter: "input" },
-    { title: "Pressure", field: "Pressure category", headerFilter: "input" },
-    { title: "Definition", field: "Definition", headerFilter: "input" },
+    { title: "Isic Section", field: "isic_section", headerFilter: "input" },
+    { title: "Isic Division", field: "isic_division", headerFilter: "input" },
+    { title: "Isic Group", field: "isic_group", headerFilter: "input" },
+    { title: "Production Process", field: "production_process", headerFilter: "input" },
+    { title: "Impact", field: "impact" },
   ],
+  pagination: true,
+  paginationSize: 12,
+  // groupBy: "Nature-related issue area",
+  // columns: [
+  //   //{ title: "Issue", field: "Nature-related issue area", headerFilter: "input" },
+  //   { title: "Pressure", field: "Pressure category", headerFilter: "input" },
+  //   { title: "Definition", field: "Definition", headerFilter: "input" },
+  // ],
 });
 
 
-//fetch('/assets/data/full-materiality-dataset.json')
-fetch('/assets/data/encore-pressure-categories.json')
+fetch('/assets/data/full-materiality-dataset.json')
+  //fetch('/assets/data/encore-pressure-categories.json')
   .then(response => response.json())
   .then(data => {
     //console.log(data)
@@ -51,5 +51,36 @@ fetch('/assets/data/encore-pressure-categories.json')
   .catch(error => console.log(error));
 
 
+// pressure categories
+const pressuresTable = new Tabulator("#pressure-categories-table", {
+  //layout: "fitDataStretch",
+  placeholder: "Loading...",
+  groupBy: "Nature-related issue area",
+  columns: [
+    //{ title: "Issue", field: "Nature-related issue area", headerFilter: "input" },
+    { title: "Pressure Category", field: "Pressure category" },
+    { title: "Scope", field: "Scope", hozAlign: "center", formatter: "tickCross", headerFilter: "tickCross", headerFilterParams: { tristate: true } },
+    { title: "Definition", field: "Definition" },
+  ],
+});
 
+// materiality thresholds
+const thresholdsTable = new Tabulator("#materiality-thresholds-table", {
+  layout: "fitColumns", //fit columns to width of table (optional)
+  placeholder: "Loading...",
+  groupBy: "Nature-related issue area",
+  columns: [
+    //{ title: "Issue", field: "Nature-related issue area", headerFilter: "input" },
+    { title: "Pressure Category", field: "Pressure category" },
+    { title: "Threshold", field: "Threshold" },
+  ],
+});
+
+fetch('/assets/data/encore-pressure-categories.json')
+  .then(response => response.json())
+  .then(data => {
+    pressuresTable.setData(data);
+    thresholdsTable.setData(data);
+  })
+  .catch(error => console.log(error));
 

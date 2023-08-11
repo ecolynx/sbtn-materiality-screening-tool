@@ -15,31 +15,33 @@ repo_url: https://github.com/ecolynx/sbtn-materiality-screening-tool
 copyright: "Version: v1 May 2023"
 
 nav:
-  - Getting Started:
-    - Overview: index.md
-    - Guidance: guidance.md
-    - Methodology: methodology.md
-    - Tool: direct-operations.md
+  - Overview: index.md
+  - Guidance:
+    - Interpretation: interpretation.md
+    - Requirements: requirements.md
+    #- Methodology: methodology.md
+    - Considerations: considerations.md
     - Definitions: definitions.md
-    - Attribution: attribution.md
-    - License: license.md
-  - Tools:
-    - Direct Operations: direct-operations.md
+  - Explore:
+    - Tool: direct-operations.md
     - Table: table.md
-  - Datasets:
     - Full Materiality Dataset: full-materiality-dataset.md
     - Base Data Materiality Rule: base-data-materiality-rule.md
-  - About: about.md
-    #- Getting Started: user-guide/getting-started.md
-  #- Auto generated:
-  #  - ... | auto-generated/*/*.md
+  - About:
+    - Attribution: attribution.md
+    - License: license.md
+
+  #- Getting Started: user-guide/getting-started.md
+#- Auto generated:
+#  - ... | auto-generated/*/*.md
 
 theme:
   name: material
   favicon: assets/favicon.ico
-  logo: assets/logo.png
+  #logo: assets/logo.png
+  logo: assets/icon-512x512.png
   features:
-    - navigation.tabs
+    #- navigation.tabs
     - navigation.sections
     - navigation.top
     - navigation.footer

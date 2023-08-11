@@ -2,61 +2,85 @@
     {
         "Nature-related issue area": "Land/Water/Sea Use Change",
         "Pressure category": "Terrestrial ecosystem use",
-        "Definition": "Examples include area of agriculture by type, area of forest plantation by type, area of open cast mine by type, etc."
+        "Definition": "Examples include area of agriculture by type, area of forest plantation by type, area of open cast mine by type, etc.",
+        "Threshold": 8,
+        "Scope": true
     },
     {
         "Nature-related issue area": "Land/Water/Sea Use Change",
         "Pressure category": "Freshwater ecosystem use",
-        "Definition": "Examples include area of wetland, ponds, lakes, streams, rivers or peatland necessary to provide ecosystem services such as water purification, fish spawning, areas of infrastructure necessary to use rivers and lakes such as bridges, dams, and flood barriers, etc."
+        "Definition": "Examples include area of wetland, ponds, lakes, streams, rivers or peatland necessary to provide ecosystem services such as water purification, fish spawning, areas of infrastructure necessary to use rivers and lakes such as bridges, dams, and flood barriers, etc.",
+        "Threshold": 8,
+        "Scope": false
     },
     {
         "Nature-related issue area": "Land/Water/Sea Use Change",
         "Pressure category": "Marine ecosystem use",
-        "Definition": "Examples include area of aquaculture by type, area of seabed mining by type, etc."
+        "Definition": "Examples include area of aquaculture by type, area of seabed mining by type, etc.",
+        "Threshold": 8,
+        "Scope": false
     },
     {
         "Nature-related issue area": "Resource exploitation",
         "Pressure category": "Water use",
-        "Definition": "Examples include volume of groundwater consumed, volume of surface water consumed, etc."
+        "Definition": "Examples include volume of groundwater consumed, volume of surface water consumed, etc.",
+        "Threshold": 8,
+        "Scope": true
     },
     {
         "Nature-related issue area": "Resource exploitation",
         "Pressure category": "Other resource use",
-        "Definition": "Examples include volume of mineral extracted, volume of wild-caught fish by species, number of wild-caught mammals by species, etc."
+        "Definition": "Examples include volume of mineral extracted, volume of wild-caught fish by species, number of wild-caught mammals by species, etc.",
+        "Threshold": 8,
+        "Scope": false
     },
     {
         "Nature-related issue area": "Climate Change",
         "Pressure category": "GHG emissions",
-        "Definition": "Examples include volume of carbon dioxide (CO2), methane (CH4), nitrous oxide (N2O), Sulphur hexafluoride (SF6), Hydrofluorocarbons, (HFCs) and perfluorocarbons (PFCs), etc."
+        "Definition": "Examples include volume of carbon dioxide (CO2), methane (CH4), nitrous oxide (N2O), Sulphur hexafluoride (SF6), Hydrofluorocarbons, (HFCs) and perfluorocarbons (PFCs), etc.",
+        "Threshold": 9,
+        "Scope": true
     },
     {
         "Nature-related issue area": "Pollution",
         "Pressure category": "Non-GHG air pollutants",
-        "Definition": "Examples include volume of fine particulate matter (PM2.5) and coarse particulate matter (PM10), Volatile Organic Compounds (VOCs), mono-nitrogen oxides (NO and NO2, commonly referred to as NOx), Sulphur dioxide (SO2), Carbon monoxide (CO), etc."
+        "Definition": "Examples include volume of fine particulate matter (PM2.5) and coarse particulate matter (PM10), Volatile Organic Compounds (VOCs), mono-nitrogen oxides (NO and NO2, commonly referred to as NOx), Sulphur dioxide (SO2), Carbon monoxide (CO), etc.",
+        "Threshold": 7,
+        "Scope": false
     },
     {
         "Nature-related issue area": "Pollution",
         "Pressure category": "Water pollutants",
-        "Definition": "Examples include volume discharged to receiving water body of nutrients (e.g., nitrates and phosphates) or other substances (e.g., heavy metals and chemicals)."
+        "Definition": "Examples include volume discharged to receiving water body of nutrients (e.g., nitrates and phosphates) or other substances (e.g., heavy metals and chemicals).",
+        "Threshold": 7,
+        "Scope": true
     },
     {
         "Nature-related issue area": "Pollution",
         "Pressure category": "Soil pollutants",
-        "Definition": "Examples include volume of waste matter discharged and retained in soil over a given period."
+        "Definition": "Examples include volume of waste matter discharged and retained in soil over a given period.",
+        "Threshold": 6,
+        "Scope": true
     },
     {
         "Nature-related issue area": "Pollution",
         "Pressure category": "Solid waste",
-        "Definition": "Examples include volume of waste by classification (i.e., nonhazardous, hazardous, and radioactive), by specific material constituents (e.g., lead, plastic), or by disposal method (e.g., landfill, incineration, recycling, specialist processing)."
+        "Definition": "Examples include volume of waste by classification (i.e., nonhazardous, hazardous, and radioactive), by specific material constituents (e.g., lead, plastic), or by disposal method (e.g., landfill, incineration, recycling, specialist processing).",
+        "Threshold": 7,
+        "Scope": false
     },
     {
         "Nature-related issue area": "Invasives and Other",
         "Pressure category": "Disturbances",
-        "Definition": "Examples include decibels and duration of noise, lumens and duration of light, at site of impact."
+        "Definition": "Examples include decibels and duration of noise, lumens and duration of light, at site of impact.",
+        "Threshold": 7,
+        "Scope": false
     },
     {
         "Nature-related issue area": "Invasives and Other",
         "Pressure category": "Biological alterations/interferences",
-        "Definition": "Examples include number of non-native and invasive animals or plants released by species, area of agriculture with genetically modified organisms or reduced genetic diversity, number of animals at risk of catching cattle-transmitted disease by species, etc."
+        "Definition": "Examples include number of non-native and invasive animals or plants released by species, area of agriculture with genetically modified organisms or reduced genetic diversity, number of animals at risk of catching cattle-transmitted disease by species, etc.",
+        "Threshold": 6,
+        "Scope": false
     }
 ]

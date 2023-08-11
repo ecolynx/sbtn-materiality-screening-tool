@@ -32,11 +32,3 @@
 
  - We will generate scores for upstream by deriving the economic relationships between direct operations and upstream sectors using MRIO models (EXIOBASE). In this approach, a company's upstream pressure scores will be determined by the scores (from ENCORE) for sectors that are upstream of it.
  - Further detail pending completion of upstream analysis.
-
-
-## Definition of pressure categories (from ENCORE)
-
-TODO: *Note that this category (Terrestial ecosystem use) is referred to as "Land use and land use change" in the SBTN framework.
-
-{{ read_excel('./SBTN-Materiality-Screening-Tool-v1.xlsx', engine='openpyxl', sheet_name="3 - Methodology", usecols="O:Q", skiprows=4, nrows=12, keep_default_na=False) }}
-
