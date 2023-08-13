@@ -1,5 +1,5 @@
 
-Companies using this [tool](direct-operations.md) must screen their economic activities consistently at the `production process` level or `ISIC group` level (using the [full materiality dataset](full-materiality-dataset.md) and cannot mix the two approaches. 
+Companies using this [tool](direct-operations.md) must screen their economic activities consistently at the `production process` or `ISIC group` level (using the [full materiality dataset](full-materiality-dataset.md) and cannot mix the two approaches. 
 
 For each **pressure score** greater than or equal to the **materiality threshold**, or marked as relevant by the **materiality rating**, companies must consider that `activity-pressure` pair as requiring further screening through a value chain assessment (**Step 1b**) to gather data that will confirm whether targets are needed for impact management, and where these are likely to be most critical. 
 
