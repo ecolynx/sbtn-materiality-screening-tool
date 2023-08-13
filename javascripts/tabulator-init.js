@@ -1,10 +1,7 @@
 
 async function getDataset(datasetPath) {
   try {
-    // production
-    const assetsPath = "https://ecolynx.github.io/sbtn-materiality-screening-tool";
-    // development
-    // const assetsPath = "";
+    const assetsPath = "/sbtn-materiality-screening-tool/assets/data/";
     const response = await fetch(assetsPath + datasetPath);
     const data = await response.json();
     return data;
@@ -127,7 +124,7 @@ if (materialityTableDiv && summaryTableDiv) {
   });
 
   materialityTable.on("tableBuilt", () => {
-    getDataset("/assets/data/full-materiality-dataset.json").then(data => {
+    getDataset("full-materiality-dataset.json").then(data => {
       materialityTable.setData(data);
     });
     materialityTable.setFilter("filter", "=", false);
@@ -158,7 +155,7 @@ if (fullMaterialityTableDiv) {
   });
 
   fullMaterialityTable.on("tableBuilt", () => {
-    getDataset("/assets/data/full-materiality-dataset.json").then(data => {
+    getDataset("full-materiality-dataset.json").then(data => {
       fullMaterialityTable.setData(data);
     });
     document.getElementById("download-full-csv").addEventListener("click", function () {
@@ -185,7 +182,7 @@ if (pressuresTableDiv) {
   });
 
   pressuresTable.on("tableBuilt", () => {
-    getDataset("/assets/data/encore-pressure-categories.json").then(data => {
+    getDataset("encore-pressure-categories.json").then(data => {
       pressuresTable.setData(data);
     });
   });
@@ -208,7 +205,7 @@ if (thresholdsTableDiv) {
   });
 
   thresholdsTable.on("tableBuilt", () => {
-    getDataset("/assets/data/encore-pressure-categories.json").then(data => {
+    getDataset("encore-pressure-categories.json").then(data => {
       thresholdsTable.setData(data);
     });
   });
