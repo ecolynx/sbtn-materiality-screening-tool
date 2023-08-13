@@ -1,3 +1,6 @@
 mkdocs-material
 openpyxl
 mkdocs-table-reader-plugin
+pillow
+cairosvg
+
