@@ -1,0 +1,140 @@
+
+# Project information
+site_name: Materiality Screening Tool
+# site_url: https://squidfunk.github.io/mkdocs-material/
+site_author: SBTN
+site_description: >-
+  Write your documentation in Markdown and create a professional static site in
+  minutes – searchable, customizable, in 60+ languages, for all devices
+
+# Repository
+repo_name: ecolynx/sbtn-materiality-screening-tool
+repo_url: https://github.com/ecolynx/sbtn-materiality-screening-tool
+
+# Copyright
+copyright: "Version: v1 May 2023"
+
+nav:
+  - Overview: index.md
+  - Guidance:
+    - Interpretation: interpretation.md
+    - Requirements: requirements.md
+    #- Methodology: methodology.md
+    #- Considerations: considerations.md
+    - Alternative: alternative.md
+    - Limitations: limitations.md
+    - Definitions: definitions.md
+  - Explore:
+    #- Tool: direct-operations.md
+    - Materiality Screening Tool: materiality-screening-tool.md
+    - Full Materiality Dataset: full-materiality-dataset.md
+    #- Base Data Materiality Rule: base-data-materiality-rule.md
+  - About:
+    - Attribution: attribution.md
+    - License: license.md
+
+  #- Getting Started: user-guide/getting-started.md
+#- Auto generated:
+#  - ... | auto-generated/*/*.md
+
+theme:
+  name: material
+  favicon: assets/favicon.ico
+  #logo: assets/logo.png
+  logo: assets/icon-512x512.png
+  features:
+    #- navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: black
+      accent: black
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      accent: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    #logo: material/nature-people-outline
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+
+plugins:
+  - table-reader
+  - search:
+      lang: 
+        - en
+        - es
+
+extra:
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://www.ecolynx.io/
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/ecolynx/
+    - icon: fontawesome/brands/github
+      link: https://github.com/ecolynx/
+
+
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  #- javascripts/tablesort-util.js
+  #- javascripts/tablefilter.js
+  #- javascripts/tablefilter.css
+  #- javascripts/tablefilter-util.js
+  #- javascripts/jquery-3.7.0.min.js
+  #- https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js
+  #- javascripts/datatable-util.js
+  # - javascripts/multiselect-dropdown.js
+  - https://unpkg.com/tabulator-tables@5.5.0/dist/js/tabulator.min.js
+  #- javascripts/tabulator-util.js
+  - javascripts/tabulator-init.js
+
+extra_css:
+  - stylesheets/extra.css
+  # - https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css
+  #- https://cdnjs.cloudflare.com/ajax/libs/material-components-web/4.0.0/material-components-web.min.css
+  #- https://cdn.datatables.net/1.13.6/css/dataTables.material.min.css
+  #- stylesheets/tablesort.css
+  - https://unpkg.com/tabulator-tables@5.5.0/dist/css/tabulator.min.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - abbr
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - toc:
+      permalink: true
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+
