@@ -9,47 +9,6 @@ async function getDataset(datasetPath) {
   }
 }
 
-//define some sample data
-// var tabledata = [
-//   { id: 1, name: "Oli Bob", age: "12", col: "red", dob: "12/08/2017" },
-//   { id: 2, name: "Mary May", age: "1", col: "blue", dob: "14/05/1982" },
-//   { id: 3, name: "Christine Lobowski", age: "42", col: "green", dob: "22/05/1982" },
-//   { id: 4, name: "Brendon Philips", age: "125", col: "orange", dob: "01/08/1980" },
-//   { id: 5, name: "Margret Marmajuke", age: "16", col: "yellow", dob: "31/01/1999" },
-// ];
-
-//create Tabulator on DOM element with id "example-table"
-//const table = (tabledata) => new Tabulator("#example-table", {
-// const table = new Tabulator("#example-table", {
-//   //height: 480, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
-//   //data: tabledata, //assign data to table
-//   layout: "fitColumns", //fit columns to width of table (optional)
-//   //autoColumns: true,
-//   placeholder: "Loading...",
-//   // columns: [ //Define Table Columns
-//   //   { title: "Name", field: "name", width: 150 },
-//   //   { title: "Age", field: "age", hozAlign: "left", formatter: "progress" },
-//   //   { title: "Favourite Color", field: "col" },
-//   //   { title: "Date Of Birth", field: "dob", sorter: "date", hozAlign: "center" },
-//   // ],
-//   //groupBy: "impact",
-//   columns: [
-//     { title: "Isic Section", field: "isic_section", headerFilter: "input" },
-//     { title: "Isic Division", field: "isic_division", headerFilter: "input" },
-//     { title: "Isic Group", field: "isic_group", headerFilter: "input" },
-//     { title: "Production Process", field: "production_process", headerFilter: "input" },
-//     { title: "Impact", field: "impact" },
-//   ],
-//   pagination: true,
-//   paginationSize: 12,
-//   // groupBy: "Nature-related issue area",
-//   // columns: [
-//   //   //{ title: "Issue", field: "Nature-related issue area", headerFilter: "input" },
-//   //   { title: "Pressure", field: "Pressure category", headerFilter: "input" },
-//   //   { title: "Definition", field: "Definition", headerFilter: "input" },
-//   // ],
-// });
-
 //create row popup contents
 var rowPopupFormatter = function (e, row, onRendered) {
   var data = row.getData(),
@@ -108,30 +67,11 @@ if (materialityTableDiv && summaryTableDiv) {
   });
 
   summaryTable.on("tableBuilt", () => {
-    // getDataset("/assets/data/full-materiality-dataset.json").then(data => {
-    //   summaryTable.setData(data);
-    // });
-    //trigger download of data.csv file
-    document.getElementById("download-csv").addEventListener("click", function () {
-      summaryTable.download("csv", "data.csv");
+    document.getElementById("download-summary-csv").addEventListener("click", function () {
+      summaryTable.download("csv", "materiality-summary.csv");
     });
 
   });
-
-  // const addSummaryRow = (e, cell) => {
-  //   const row = cell.getRow();
-  //   // get row data
-  //   const rowData = row.getData();
-  //   console.log(rowData);
-
-  //   if (row.isSelected()) {
-  //     // add row to summary table
-  //     summaryTable.addRow(rowData);
-  //   } else {
-  //     // remove row from summary table
-  //     summaryTable.deleteRow(rowData['Row #']);
-  //   }
-  // }
 
   const addSummaryRow = (row) => {
     // get row data
@@ -172,8 +112,8 @@ if (materialityTableDiv && summaryTableDiv) {
             else
               addSummaryRow(row);
           });
-        }
-        , headerFilter: "input"
+        },
+        headerFilter: "input", headerFilterPlaceholder: "Search ISIC Group",
       },
       // { title: "Production Process", field: "production_process", headerFilter: "input" },
     ],
@@ -201,17 +141,24 @@ if (fullMaterialityTableDiv) {
     placeholder: "Loading...",
     //groupBy: "impact",
     columns: [
-      { title: "Isic Group", field: "isic_group", headerFilter: "input" },
-      { title: "Production Process", field: "production_process", headerFilter: "input" },
-      { title: "Impact", field: "impact" },
+      { title: "ISIC Group", field: "isic_group", widthGrow: 3, headerFilter: "input", headerFilterPlaceholder: "Search ISIC Group" },
+      // { title: "Production Process", field: "production_process", visible: false, download: true },
+      { title: "Impact", field: "impact", widthGrow: 1 },
+      { title: "Mean Score", field: "meanscore", visible: false, download: true },
+      { title: "Mean Threshold", field: "impactthreshisicgrp", visible: false, download: true },
+      { title: "Average Materiality", field: "avgmateriality", hozAlign: "center", formatter: "tickCross" },
     ],
     pagination: true,
     paginationSize: 20,
+    paginationCounter: "rows",
   });
 
   fullMaterialityTable.on("tableBuilt", () => {
     getDataset("/assets/data/full-materiality-dataset.json").then(data => {
       fullMaterialityTable.setData(data);
+    });
+    document.getElementById("download-full-csv").addEventListener("click", function () {
+      fullMaterialityTable.download("csv", "full-materiality.csv");
     });
   });
 }

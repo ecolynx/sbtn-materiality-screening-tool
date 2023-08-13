@@ -20,14 +20,15 @@ nav:
     - Interpretation: interpretation.md
     - Requirements: requirements.md
     #- Methodology: methodology.md
-    - Considerations: considerations.md
+    #- Considerations: considerations.md
+    - Alternative: alternative.md
+    - Limitations: limitations.md
     - Definitions: definitions.md
   - Explore:
-    - Tool: direct-operations.md
+    #- Tool: direct-operations.md
     - Materiality Screening Tool: materiality-screening-tool.md
-    - Table: table.md
     - Full Materiality Dataset: full-materiality-dataset.md
-    - Base Data Materiality Rule: base-data-materiality-rule.md
+    #- Base Data Materiality Rule: base-data-materiality-rule.md
   - About:
     - Attribution: attribution.md
     - License: license.md

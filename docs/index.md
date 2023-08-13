@@ -1,7 +1,7 @@
 
 # Overview
 
-This documentation is based on the [SBTN Materiality Screening Tool](https://sciencebasedtargetsnetwork.org/wp-content/uploads/2023/05/SBTN-Materiality-Screening-Tool-v1.xlsx) developed by UNEP-WCMC, BCG and SBTN. It corresponds to the version `v1 May 2023` of the tool.
+This documentation is based on the [SBTN Materiality Screening Tool](https://sciencebasedtargetsnetwork.org/wp-content/uploads/2023/05/SBTN-Materiality-Screening-Tool-v1.xlsx) (Version: `v1 May 2023`) developed by UNEP-WCMC, BCG and SBTN.
 
 <!-- The aim is to help users carry out a first screening of the types of environmental impacts that are potentially materially relevant to their sector and their company's activities. -->
 
@@ -17,7 +17,7 @@ The [SBTN Materiality Screening Tool](https://sciencebasedtargetsnetwork.org/wp-
 
 ## Value Chain Coverage
 
-For this release of the documentation (Version: `v1 May 2023`), the tool functionality encompasses activities in companies’ direct operations and upstreams. Downstream activities will not be included in the current iterations of the tool. 
+For this release of the documentation (Version: `v1 May 2023`), the tool functionality encompasses activities in companies’ direct operations and upstreams. Downstream activities will not be included in the current iteration of the tool. 
 
 !!! note "Direct Operations"
     This version of the tool is for beta testing and only contains scores for direct operations. The upstream scores will be added in the near future.
@@ -26,15 +26,15 @@ For this release of the documentation (Version: `v1 May 2023`), the tool functio
 
 -   :material-tools:{ .lg .middle } __Exploration Tool__
 
-    Select [`ISIC groups`](definitions.md#isic-group) and explore their corresponding [`production processes'`](definitions.md#production-process) materiality scores and ratings for each pressure category
+    Select [`ISIC groups`](definitions.md#isic-group) and explore their corresponding [`production processes'`](definitions.md#production-process) **materiality ratings** for each **pressure category**
 
-    [:octicons-arrow-right-24: Tool](direct-operations.md)
+    [:octicons-arrow-right-24: Tool](materiality-screening-tool.md)
 
     ---
 
 -   :material-database:{ .lg .middle } __Full Dataset__
 
-    Consult full materiality dataset and explore the materiality scores and ratings for each pressure category
+    Consult the full materiality dataset and explore the average **materiality ratings** for each **pressure category** at an [`ISIC group`](definitions.md#isic-group) level
 
     [:octicons-arrow-right-24: Dataset](full-materiality-dataset.md)
 
@@ -48,7 +48,7 @@ For this release of the documentation (Version: `v1 May 2023`), the tool functio
     [:octicons-arrow-right-24: Classifications](#)
 
     --- -->
-
+<!-- 
 ## Outline
 This documentation comprises 9 pages:
 
@@ -61,4 +61,4 @@ This documentation comprises 9 pages:
 7. Full materiality dataset: Dataset derived by pairing the production processes from the ENCORE tool with ISIC group categories. 
 8. Base data for materiality rule: This sheet includes just the 'production process' categories and the scores associated with these, which were used to calculate the materiality threshold for each pressure category. 
 9.  ISIC Detail: Detail detail of the ISIC framework to help companies determine the appropriate classifications to use.
-10. Crosswalk ISIC - NACE - GICS: Resource for companies familiar with alternative economic classifications; this table can be used to translate any ISIC class into its equivalent(s) in the Global Industry Classification Standard (GICS) or Statistical Classification of Economic Activities in the European Community (NACE) classification.
+10. Crosswalk ISIC - NACE - GICS: Resource for companies familiar with alternative economic classifications; this table can be used to translate any ISIC class into its equivalent(s) in the Global Industry Classification Standard (GICS) or Statistical Classification of Economic Activities in the European Community (NACE) classification. -->

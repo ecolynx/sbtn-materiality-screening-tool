@@ -1,10 +1,10 @@
 # Interpretation
 
-The [materiality tool](direct-operations.md) provides users with ratings of materiality for different economic activities. These activities are listed as [`ISIC group`](definitions.md#isic-group) and UNEP-WCMC [`production process`](definitions.md#production-process) pairs ([`group-process`](definitions.md#group-process) pair).
+The [materiality tool](materiality-screening-tool.md) provides users with ratings of materiality for different economic activities. These activities are listed as [`ISIC group`](definitions.md#isic-group) and UNEP-WCMC [`production process`](definitions.md#production-process) pairs ([`group-process`](definitions.md#group-process) pair).
 
 Each [`group-process`](definitions.md#group-process) has been evaluated for material contributions toward twelve different **pressure categories**. A numerical indexed **pressure score** is attributed to each [`group-process`](definitions.md#group-process) and **pressure category** (`activity-pressure` pair). Additional values have also been added to indicate whether or not the score is significant, using a categorical **materiality rating**, based on a **materiality threshold**. This threshold is based on the full distribution of numerical scores for all of the base economic activities present in the underlying dataset.
 
-The [materiality tool](direct-operations.md) currently facilitates the analysis of environmental impacts at the [`production process`](definitions.md#production-process) level. A **materiality rating** is associated with each [`production process`](definitions.md#production-process) indicating whether or not the activity is considered material in a given **pressure category**.
+The [materiality tool](materiality-screening-tool.md) currently facilitates the analysis of environmental impacts at the [`production process`](definitions.md#production-process) level. A **materiality rating** is associated with each [`production process`](definitions.md#production-process) indicating whether or not the activity is considered material in a given **pressure category**.
 
 ## Pressure Categories
 
@@ -16,7 +16,7 @@ The **pressure categories** included in the tool are based on the [ENCORE framew
  - Pollution
  - Invasive alien species & other
 
-Of the **pressure categories** included in the [materiality tool](direct-operations.md), only five are considered to be in scope for this version of the SBTN methods (Version: `v1 May 2023`).
+Of the **pressure categories** included in the [materiality tool](materiality-screening-tool.md), only five are considered to be in scope for this version of the SBTN methods (Version: `v1 May 2023`).
 
 <div id="pressure-categories-table"></div>
 
@@ -34,10 +34,10 @@ There are six possible **pressure scores**, ranging from 3 to 9. The scores are 
 - Frequency
 - Timeframe (latency)
 
-Each component was evaluated along a scale of 1 to 3, with 1 being the lowest and 3 being the highest. When there is not enough information to attribute a score, the tool will read **ND** (No Data).
+Each component was evaluated along a scale of 1 to 3, with 1 being the lowest and 3 being the highest. When there is not enough information to attribute a score for a specific impact, the [`activity-pressure`](definitions.md#activity-pressure) pair is omitted in the [materiality tool](materiality-screening-tool.md).
 
-!!! note "No Data"
-    The **ND** attribute does not mean that it is not likely there is an impact. This value reflects the findings of the initial research effort that underpins this dataset.
+!!! note "No Score"
+    The absence of a score does not mean that it is not likely there is an impact. This reflects the findings of the initial research effort that underpins this dataset.
 
 !!! info "Direct Operations"
     Activity scores are considered to be those representing a company's direct operations only. Currently, upstream scores can be retrieved by users based on the known connections between activities in a company's direct operations and those of their upstream suppliers.
@@ -52,6 +52,8 @@ For each of the **pressure categories** included in the tool, a **materiality th
 </figure>
 
 <div id="materiality-thresholds-table"></div>
+
+The range of threshold values reflects the distribution of **pressure scores** within each **pressure category**. Users must interpret these scores indepentently for each pressure and not compare across **pressure cagegories**. As can be seen in the [full materiality dataset](full-materiality-dataset.md), the contributions of economic activities towards some environmental pressures are much better documented than others and the interpretation of impacts for different pressures may also be categorized differently.
 
 ## Materiality Ratings
 
