@@ -1,7 +1,11 @@
 
 async function getDataset(datasetPath) {
   try {
-    const response = await fetch(datasetPath);
+    // production
+    const assetsPath = "https://ecolynx.github.io/sbtn-materiality-screening-tool";
+    // development
+    // const assetsPath = "";
+    const response = await fetch(assetsPath + datasetPath);
     const data = await response.json();
     return data;
   } catch (error) {
