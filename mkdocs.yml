@@ -4,11 +4,10 @@ site_name: Materiality Screening Tool
 site_url: https://ecolynx.github.io/sbtn-materiality-screening-tool/
 site_author: EcoLynx
 site_description: >-
-  Assess the environmental impacts of your organization's economic activities.
+  A materiality screening tool to determine which economic activities and pressures likely require science-based targets for nature.
 
 # Repository
 repo_name: ecolynx/sbtn-materiality-screening-tool
-repo_url: https://github.com/ecolynx/sbtn-materiality-screening-tool
 
 # Copyright
 copyright: "Version: v1 May 2023"
@@ -31,10 +30,6 @@ nav:
   - About:
     - Attribution: attribution.md
     - License: license.md
-
-  #- Getting Started: user-guide/getting-started.md
-#- Auto generated:
-#  - ... | auto-generated/*/*.md
 
 theme:
   name: material
@@ -81,7 +76,7 @@ theme:
 
 plugins:
   - table-reader
-  - social
+  - social:
   - search:
       lang: 
         - en
@@ -98,25 +93,11 @@ extra:
 
 
 extra_javascript:
-  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
-  #- javascripts/tablesort-util.js
-  #- javascripts/tablefilter.js
-  #- javascripts/tablefilter.css
-  #- javascripts/tablefilter-util.js
-  #- javascripts/jquery-3.7.0.min.js
-  #- https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js
-  #- javascripts/datatable-util.js
-  # - javascripts/multiselect-dropdown.js
   - https://unpkg.com/tabulator-tables@5.5.0/dist/js/tabulator.min.js
-  #- javascripts/tabulator-util.js
   - javascripts/tabulator-init.js
 
 extra_css:
   - stylesheets/extra.css
-  # - https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css
-  #- https://cdnjs.cloudflare.com/ajax/libs/material-components-web/4.0.0/material-components-web.min.css
-  #- https://cdn.datatables.net/1.13.6/css/dataTables.material.min.css
-  #- stylesheets/tablesort.css
   - https://unpkg.com/tabulator-tables@5.5.0/dist/css/tabulator.min.css
 
 markdown_extensions:
