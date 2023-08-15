@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://ecolynx.github.io/sbtn-materiality-screening-tool/">
-    <img src="docs/assets/logo.png" width="320" alt="Materiality Screening Tool">
+    <img src="docs/assets/logo_black.png" width="320" alt="Materiality Screening Tool">
   </a>
 </p>
 
