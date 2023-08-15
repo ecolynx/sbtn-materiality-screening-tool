@@ -13,7 +13,7 @@ repo_name: ecolynx/sbtn-materiality-screening-tool
 copyright: "Version: v1 May 2023"
 
 nav:
-  - Overview: index.md
+  - Getting Started: index.md
   - Guidance:
     - Interpretation: interpretation.md
     - Requirements: requirements.md
