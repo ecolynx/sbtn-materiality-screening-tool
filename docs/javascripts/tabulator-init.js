@@ -1,7 +1,7 @@
 
 async function getDataset(datasetPath) {
   try {
-    const assetsPath = "/sbtn-materiality-screening-tool/assets/data/";
+    const assetsPath = "/assets/data/";
     const response = await fetch(assetsPath + datasetPath);
     const data = await response.json();
     return data;

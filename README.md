@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://ecolynx.github.io/sbtn-materiality-screening-tool/">
+  <a href="https://sbtn.ecolynx.io/">
     <img src="docs/assets/logo_black.png" width="320" alt="Materiality Screening Tool">
   </a>
 </p>
@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <a href="https://ecolynx.github.io/sbtn-materiality-screening-tool/">
+  <a href="https://sbtn.ecolynx.io/">
     <img src="docs/assets/screenshot.png" width="700" />
   </a>
 </p>
@@ -21,8 +21,8 @@
   <em>
     Check out the site – 
     <a
-      href="https://ecolynx.github.io/sbtn-materiality-screening-tool/"
-    >ecolynx.github.io/sbtn-materiality-screening-tool</a>.
+      href="https://sbtn.ecolynx.io/"
+    >sbtn.ecolynx.io</a>.
   </em>
 </p>
 

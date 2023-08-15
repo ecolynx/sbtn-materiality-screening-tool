@@ -1,7 +1,7 @@
 
 # Project information
 site_name: Materiality Screening Tool
-site_url: https://ecolynx.github.io/sbtn-materiality-screening-tool/
+site_url: https://sbtn.ecolynx.io/
 site_author: EcoLynx
 site_description: >-
   A materiality screening tool to determine which economic activities and pressures likely require science-based targets for nature.
@@ -33,6 +33,7 @@ nav:
 
 theme:
   name: material
+  custom_dir: overrides
   favicon: assets/favicon.ico
   logo: assets/logo.png
   #logo: assets/icon-512x512.png
