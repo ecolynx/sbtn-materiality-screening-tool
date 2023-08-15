@@ -33,6 +33,7 @@ nav:
 
 theme:
   name: material
+  custom_dir: overrides
   favicon: assets/favicon.ico
   logo: assets/logo.png
   #logo: assets/icon-512x512.png
